@@ -2,11 +2,12 @@ export default function Home(this: any) {
   console.log("Loaded Index Page");
   return (
     <>
-      <div className="flex flex-col">
+      <div className="grid place-items-center h-screen">
+        <div>
         <h1 className="font-bold text-center text-3xl underline text-cyan-300">
-          To Do APP
+          To-Do-APP
         </h1>
-        <p className=" text-center text-red-600">Made by GhxsT</p>
+        <p className="text-center text-red-600">Made by GhxsT</p>
         <form action="/api/auth" method="POST" className="text-center">
           <label htmlFor="">Username:</label>
           <br />
@@ -24,6 +25,7 @@ export default function Home(this: any) {
             Click
           </button>
         </form>
+        </div>
       </div>
     </>
   );

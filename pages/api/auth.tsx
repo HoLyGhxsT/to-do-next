@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import Home from "../next";
 
 type Data = {
   message: string;
@@ -13,7 +12,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
     res.status(422).json({ message: "Invalid Data" });
     return;
   } else {
-    return <Home />;
+    res.redirect("/next");
   }
 }
 

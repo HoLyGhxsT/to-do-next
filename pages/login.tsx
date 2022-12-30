@@ -1,4 +1,4 @@
-export default function Reg() {
+export default function Login() {
   console.log("Loaded Index Page");
   return (
     <>
@@ -8,7 +8,7 @@ export default function Reg() {
             To-Do-APP
           </h1>
           <p className="text-center text-red-600">Made by GhxsT</p>
-          <form action="/api/auth/reg" method="POST" className="text-center">
+          <form action="/api/auth/login" method="POST" className="text-center">
             <label htmlFor="">Username:</label>
             <br />
             <input type="text" name="email" id="" className="rounded-full" />

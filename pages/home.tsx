@@ -1,4 +1,4 @@
-export default function Success() {
+export default function Home() {
   console.log("It is Success");
   return (
     <>

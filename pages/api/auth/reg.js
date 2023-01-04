@@ -11,7 +11,7 @@ try {
 
 export default async function handler(req, res) {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const user = await User.create(req.body);
     res.redirect("/home");
     if (!user) {

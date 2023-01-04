@@ -1,8 +1,15 @@
+import Head from "next/head";
+
 export default function Home() {
-  console.log("It is Success");
+  console.log("Home Page Loaded");
   return (
     <>
-      <h1>Success</h1>
+      <Head>
+        <title> Home Page </title>
+      </Head>
+      <div className="center">
+        <h1>Success</h1>
+      </div>
     </>
   );
 }

@@ -8,7 +8,9 @@ export default function Home() {
         <title> Home Page </title>
       </Head>
       <div className="center">
-        <h1>Success</h1>
+        <h1 className="font-bold underline text-3xl text-cyan-700 italic grid h-screen place-content-center ">
+          Success
+        </h1>
       </div>
     </>
   );
